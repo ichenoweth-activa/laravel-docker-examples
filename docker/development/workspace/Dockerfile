@@ -58,7 +58,7 @@ RUN if getent group ${GID}; then \
       groupadd -g ${GID} www && \
       useradd -m -u ${UID} -g www -s /bin/bash www; \
     fi && \
-    usermod -aG sudo www && \
+    usermod -aG sudo www && \   
     echo 'www ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers
 
 # Switch to the non-root user to install NVM and Node.js
