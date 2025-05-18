@@ -1,0 +1,22 @@
+.breadcrumb-link {
+    color: #007aff;
+    text-decoration: none;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.breadcrumb-link:hover {
+    /*text-decoration: underline; */
+}
+
+.breadcrumb-link:active {
+    color: #0051a8;
+}
+.breadcrumb-divider {
+    margin: 0 8px;
+    color: #007aff;
+}
+
+.cursor-pointer-avatar {
+    cursor: pointer;
+}
