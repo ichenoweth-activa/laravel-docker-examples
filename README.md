@@ -134,7 +134,8 @@ npm run dev
 4. Run Migrations:
 
 ```bash
-docker compose -f compose.dev.yaml exec workspace php artisan migrate
+docker compose -f compose.dev.yaml exec workspace php artisan migrate:fresh --seed
+docker compose -f compose.dev.yaml exec workspace composer dump-autoload
 ```
 
 5. Access the Application:
