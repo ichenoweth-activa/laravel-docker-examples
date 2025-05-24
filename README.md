@@ -122,7 +122,7 @@ You can find these by running `id -u` and `id -g` in the terminal.
 docker compose -f compose.dev.yaml up -d
 ```
 
-3. Install Laravel Dependencies:
+3. Install Laravel Dependencies (dev):
 
 ```bash
 docker compose -f compose.dev.yaml exec workspace bash

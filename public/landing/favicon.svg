@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="260" height="260"><svg version="1.1" id="SvgjsSvg1000" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 260 260" style="enable-background:new 0 0 260 260;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#932E80;}
+	.st1{fill:#F8D84A;}
+</style>
+<rect x="-3" y="-2" class="st0" width="266" height="265"></rect>
+<g>
+	<path class="st1" d="M183.3,52.5c-19.7,0-35.7,16-35.7,35.7c0,19.7,16,35.7,35.7,35.7s35.7-16,35.7-35.7
+		C219,68.5,203,52.5,183.3,52.5z M207.6,88.2c0,13.4-10.9,24.3-24.3,24.3c-13.4,0-24.3-10.9-24.3-24.3c0-13.4,10.9-24.3,24.3-24.3
+		C196.7,63.8,207.6,74.7,207.6,88.2z"></path>
+	<path class="st1" d="M151.2,203.4c5.2-2.1,9.6-5,13.1-8.8c3.4-3.8,6-8.3,7.7-13.6c1.7-5.2,2.5-11,2.5-17.1c0-3-0.1-6.4-0.4-10
+		c-0.3-3.7-0.8-7.1-1.6-10.1l-0.2-0.9h-0.9H94.3h-0.9l-0.2,0.9c-0.8,3-1.3,6.4-1.6,10.1c-0.3,3.6-0.4,7-0.4,10
+		c0,6.2,0.8,12,2.5,17.1c1.7,5.2,4.3,9.8,7.7,13.6c3.4,3.8,7.8,6.7,13.1,8.8c5.2,2.1,11.4,3.1,18.4,3.1
+		C139.8,206.5,146,205.5,151.2,203.4z M132.8,193.1c-9.4,0-16.7-2.4-21.9-7c-5.1-4.6-7.7-11.8-7.7-21.3c0-3,0-5.2,0.1-6.8
+		c0-0.9,0.1-1.7,0.1-2.3h58.6c0,0.6,0.1,1.3,0.1,2.3c0.1,1.6,0.1,3.9,0.1,6.8c0,9.5-2.6,16.7-7.7,21.3
+		C149.5,190.7,142.2,193.1,132.8,193.1z"></path>
+	<rect x="40" y="82.3" class="st1" width="80.7" height="11.6"></rect>
+</g>
+</svg><style>@media (prefers-color-scheme: light) { :root { filter: none; } }
+@media (prefers-color-scheme: dark) { :root { filter: contrast(1) brightness(1.1); } }
+</style></svg>
