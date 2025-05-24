@@ -14,6 +14,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     libcurl4-openssl-dev \
     libicu-dev \
     libzip-dev \
+    libgd-dev \
+    && apt-get install -y libgd3 \
     && docker-php-ext-install -j$(nproc) \
     pdo_mysql \
     pdo_pgsql \
@@ -23,6 +25,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     zip \
     bcmath \
     soap \
+    gd \
     && pecl install redis \
     && docker-php-ext-enable redis \
     && apt-get autoremove -y && apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
@@ -50,8 +53,7 @@ COPY . /var/www
 
 # Install Composer and dependencies
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer \
-    && composer install --no-dev --optimize-autoloader --no-interaction --no-progress --prefer-dist
-
+    && composer require nunomaduro/collision --optimize-autoloader --no-interaction --no-progress --prefer-dist --ignore-platform-reqs
 
 # Stage 2: Production environment
 FROM php:8.3-fpm AS production
@@ -82,6 +84,7 @@ COPY ./storage /var/www/storage-init
 COPY --from=builder /usr/local/lib/php/extensions/ /usr/local/lib/php/extensions/
 COPY --from=builder /usr/local/etc/php/conf.d/ /usr/local/etc/php/conf.d/
 COPY --from=builder /usr/local/bin/docker-php-ext-* /usr/local/bin/
+COPY --from=builder /usr/local/bin/composer /usr/local/bin/composer
 
 # Use the recommended production PHP configuration
 # -----------------------------------------------------------

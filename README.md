@@ -255,3 +255,24 @@ git commit -m "Description of changes"
 ## License
 
 This project is licensed under the MIT License. See the LICENSE file for more details.
+
+## Pending
+
+App, HTTP, public images, landing assets
+
+composer clear-cache
+composer update
+composer dump-autoload
+php artisan package:discover
+
+he `bootstrap/app.php` file uses the `Application::configure()` method, which is causing the `BadMethodCallException`.
+This method was introduced in Laravel 11.x.
+
+However, the `composer.json` file specifies `laravel/framework: ^10.10`.
+This means that the application is using a Laravel 10.x version, which does not have the `configure()` method.
+
+The `bootstrap/app.php` file is not compatible with Laravel 10.x.
+
+To fix this, I need to modify the bootstrap/app.php file to use the Laravel 10.x bootstrapping process.
+
+app/Console/Kernel.ph

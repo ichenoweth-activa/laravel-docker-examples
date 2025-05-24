@@ -59,6 +59,8 @@ services:
       MYSQL_DATABASE: "${DB_DATABASE:-laravel}"
       MYSQL_USER: "${DB_USERNAME:-sail}"
       MYSQL_PASSWORD: "${DB_PASSWORD:-password}"
+      TZ: "America/Hermosillo"
+      MYSQL_INIT_COMMAND: "SET GLOBAL host_cache_size=0;"
     volumes:
       - mysql-data-production:/var/lib/mysql
     networks:
