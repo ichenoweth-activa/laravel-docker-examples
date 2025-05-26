@@ -198,6 +198,12 @@ The production environment is designed with security and efficiency in mind:
 
 The production image can be deployed to any Docker-compatible hosting environment, such as AWS ECS, Kubernetes, or a traditional VPS.
 
+The production env could be test it localy via :
+
+```bash
+docker compose -f compose.prod.yaml up -d --build
+```
+
 ## Technical Details
 
 -   **PHP**: Version **8.3 FPM** is used for optimal performance in both development and production environments.
